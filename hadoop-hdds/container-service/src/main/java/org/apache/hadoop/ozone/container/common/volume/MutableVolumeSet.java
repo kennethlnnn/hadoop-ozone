@@ -208,6 +208,7 @@ public class MutableVolumeSet implements VolumeSet {
     shutdownHook = () -> {
       saveVolumeSetUsed();
     };
+    
     ShutdownHookManager.get().addShutdownHook(shutdownHook,
         SHUTDOWN_HOOK_PRIORITY);
   }
